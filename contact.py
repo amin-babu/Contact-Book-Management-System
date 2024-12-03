@@ -2,8 +2,9 @@ import add_contact
 import view_contact
 import remove_contact
 import search_book
+import load_file
 
-contact_book = []
+contact_book = load_file.file_load()
 
 while True:
   print('Welcome to Contact Book Management System')
