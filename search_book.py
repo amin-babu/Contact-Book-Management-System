@@ -2,8 +2,8 @@ def find_book(contact_book):
   if contact_book != []:
     try:
       number = int(input('Enter book number which you want to search: '))
-    except ValueError:
-      print('The phone number must be an integer')
+    except Exception as e:
+      print(e)
       return contact_book
     found = False
     

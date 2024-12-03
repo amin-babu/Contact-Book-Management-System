@@ -14,7 +14,10 @@ while True:
   print('3. Remove Contacts')
   print('4. Search Contacts')
 
-  select = input('Select an option : ')
+  try:
+    select = input('Select an option : ')
+  except Exception as e:
+    print(e)
 
   if select == '0':
     print('Thanks for using Contact Book Management System')
