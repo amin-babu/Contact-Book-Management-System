@@ -14,22 +14,22 @@ while True:
   print('3. Remove Contacts')
   print('4. Search Contacts')
 
-  select = int(input('Select an option : '))
+  select = input('Select an option : ')
 
-  if select == 0:
+  if select == '0':
     print('Thanks for using Contact Book Management System')
     break
 
-  elif select == 1:
+  elif select == '1':
     contact_book == add_contact.include_contact(contact_book)
   
-  elif select == 2:
+  elif select == '2':
     view_contact.view_all(contact_book)
   
-  elif select == 3:
+  elif select == '3':
     contact_book = remove_contact.delete_contact(contact_book)
 
-  elif select == 4:
+  elif select == '4':
     search_book.find_book(contact_book)
   
   else:
